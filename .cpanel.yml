@@ -2,6 +2,6 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cakeonc1/public_html
- - export REPOPATH=/home/cakeonc1/luya_shop_admin
- - /bin/cp -R ${REPOPATH}/public_html/* $DEPLOYPATH
+ - export REPOPATH=/home/cakeonc1/luya_shop_admin/public_html
+ - /bin/cp -R $REPOPATH / * $DEPLOYPATH
  
