@@ -971,23 +971,26 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.34",
-            "version_normalized": "8.13.34.0",
+            "version": "8.13.35",
+            "version_normalized": "8.13.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "319810672f3f90d810e3cbc0071d0b7b329c2ec8"
+                "reference": "cd52d7b27572ee45d31ca0d61b394638ed9a6bae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/319810672f3f90d810e3cbc0071d0b7b329c2ec8",
-                "reference": "319810672f3f90d810e3cbc0071d0b7b329c2ec8",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/cd52d7b27572ee45d31ca0d61b394638ed9a6bae",
+                "reference": "cd52d7b27572ee45d31ca0d61b394638ed9a6bae",
                 "shasum": ""
             },
             "require": {
                 "giggsey/locale": "^1.7|^2.0",
                 "php": ">=5.3.2",
                 "symfony/polyfill-mbstring": "^1.17"
+            },
+            "replace": {
+                "giggsey/libphonenumber-for-php-lite": "self.version"
             },
             "require-dev": {
                 "pear/pear-core-minimal": "^1.9",
@@ -998,7 +1001,7 @@
                 "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
                 "symfony/phpunit-bridge": "^4.2 || ^5"
             },
-            "time": "2024-04-05T09:45:18+00:00",
+            "time": "2024-04-19T12:41:30+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1046,17 +1049,17 @@
         },
         {
             "name": "giggsey/locale",
-            "version": "2.5",
-            "version_normalized": "2.5.0.0",
+            "version": "2.6",
+            "version_normalized": "2.6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/Locale.git",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239"
+                "reference": "37874fa473131247c348059fb7b8985efc18b5ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/37874fa473131247c348059fb7b8985efc18b5ea",
+                "reference": "37874fa473131247c348059fb7b8985efc18b5ea",
                 "shasum": ""
             },
             "require": {
@@ -1075,7 +1078,7 @@
                 "symfony/finder": "^5.0|^6.0",
                 "symfony/process": "^5.0|^6.0"
             },
-            "time": "2023-11-01T17:19:48+00:00",
+            "time": "2024-04-18T19:31:19+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1097,7 +1100,7 @@
             "description": "Locale functions required by libphonenumber-for-php",
             "support": {
                 "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/2.5"
+                "source": "https://github.com/giggsey/Locale/tree/2.6"
             },
             "install-path": "../giggsey/locale"
         },
@@ -2104,17 +2107,17 @@
         },
         {
             "name": "luyadev/luya-module-admin",
-            "version": "5.0.2",
-            "version_normalized": "5.0.2.0",
+            "version": "5.0.4",
+            "version_normalized": "5.0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-module-admin.git",
-                "reference": "cff5830eda44d60ea1a39fdbab34909888ebb336"
+                "reference": "65466eecc393e9e4bbe28b559e30b045678a3454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-admin/zipball/cff5830eda44d60ea1a39fdbab34909888ebb336",
-                "reference": "cff5830eda44d60ea1a39fdbab34909888ebb336",
+                "url": "https://api.github.com/repos/luyadev/luya-module-admin/zipball/65466eecc393e9e4bbe28b559e30b045678a3454",
+                "reference": "65466eecc393e9e4bbe28b559e30b045678a3454",
                 "shasum": ""
             },
             "require": {
@@ -2149,7 +2152,7 @@
             "suggest": {
                 "cebe/php-openapi": "Is required in order to generate the OpenAPI File."
             },
-            "time": "2024-03-28T11:11:51+00:00",
+            "time": "2024-04-23T09:18:46+00:00",
             "type": "luya-core",
             "extra": {
                 "luya": {
@@ -2192,7 +2195,7 @@
             ],
             "support": {
                 "issues": "https://github.com/luyadev/luya-module-admin/issues",
-                "source": "https://github.com/luyadev/luya-module-admin/tree/5.0.2"
+                "source": "https://github.com/luyadev/luya-module-admin/tree/5.0.4"
             },
             "install-path": "../luyadev/luya-module-admin"
         },

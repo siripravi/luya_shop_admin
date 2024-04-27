@@ -316,7 +316,7 @@ return array (
         'isDev' => false,
         'name' => 'luyadev/luya-module-admin',
         'prettyName' => 'luyadev/luya-module-admin',
-        'version' => '5.0.2.0',
+        'version' => '5.0.4.0',
         'targetDir' => NULL,
         'installSource' => 'dist',
         'sourceUrl' => 'https://github.com/luyadev/luya-module-admin.git',
@@ -334,5 +334,5 @@ return array (
       ),
     ),
   ),
-  'timestamp' => 1712557449,
+  'timestamp' => 1714220408,
 );
