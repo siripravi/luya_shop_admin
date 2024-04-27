@@ -1,0 +1,13 @@
+{
+    "js" : [
+        "../js/cmsadmin.js",
+        "../js/services.js"
+    ],
+    "css": [
+        "../scss/cmsadmin.scss"
+    ],
+    "options": {
+        "compress" : false,
+        "maps" : true
+    }
+}
