@@ -1,5 +1,5 @@
 <?php
-
+//TESTING IF GITIGNOREWORKS!
 use luya\Config;
 $test = "strange";
 $params = require __DIR__ . '/params.php';
