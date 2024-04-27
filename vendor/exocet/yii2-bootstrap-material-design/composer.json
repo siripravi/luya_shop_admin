@@ -1,0 +1,44 @@
+{
+  "name": "exocet/yii2-bootstrap-material-design",
+  "description": "Composer package for implementing MDB in Yii2.",
+  "keywords": [
+    "yii", "yii2", "bootstrap", "material"
+  ],
+  "version": "2.4.0",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/xchwarze/yii2-bootstrap-material-design/issues",
+    "source": "https://github.com/xchwarze/yii2-bootstrap-material-design"
+  },
+  "authors": [
+    {
+      "name": "DSR!",
+      "email": "xchwarze@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.10",
+    "yiisoft/yii2-bootstrap5": "~2.0.4",
+    "npm-asset/mdb-ui-kit": "^6.4",
+    "npm-asset/mervick--mdi-icons": "^4.0",
+    "npm-asset/fortawesome--fontawesome-free": "^6.5"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "exocet\\bootstrap5md\\": "src",
+      "exocet\\composer\\": "composer"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "exocet\\composer\\LauncherClass::postInstall",
+    "post-update-cmd": "exocet\\composer\\LauncherClass::postUpdate"
+  }
+}

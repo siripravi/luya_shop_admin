@@ -1,0 +1,553 @@
+2024-04-20 17:14:56 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:14:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626096.2973
+    'REQUEST_TIME' => 1713626096
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:15:23 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:15:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626123.2975
+    'REQUEST_TIME' => 1713626123
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:16:32 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:16:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626192.465
+    'REQUEST_TIME' => 1713626192
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:17:20 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:17:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626240.003
+    'REQUEST_TIME' => 1713626240
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:18:48 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=con...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=con...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=con...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:18:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626328.0318
+    'REQUEST_TIME' => 1713626328
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:22:08 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:22:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626528.6813
+    'REQUEST_TIME' => 1713626528
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]
+2024-04-20 17:24:17 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--appconfig=./configs/console.php". in C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\luyashopadmin\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('--appconfig=./c...', Array)
+#1 C:\luyashopadmin\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\luyashopadmin\vendor\yiisoft\yii2\yii(37): yii\base\Application->run()
+#3 {main}
+2024-04-20 17:24:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\pc\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BRDKC36'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\pc'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-21'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_211'
+    'LOCALAPPDATA' => 'C:\\Users\\pc\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BRDKC36'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\pc\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\pc\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\pc\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-BRDKC36'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BRDKC36'
+    'USERNAME' => 'pc'
+    'USERPROFILE' => 'C:\\Users\\pc'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_NAME' => './vendor/yiisoft/yii2/yii'
+    'SCRIPT_FILENAME' => './vendor/yiisoft/yii2/yii'
+    'PATH_TRANSLATED' => './vendor/yiisoft/yii2/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713626657.2604
+    'REQUEST_TIME' => 1713626657
+    'argv' => [
+        0 => './vendor/yiisoft/yii2/yii'
+        1 => '--appconfig=./configs/console.php'
+        2 => 'migration/create'
+        3 => 'catalog_*'
+    ]
+    'argc' => 4
+]

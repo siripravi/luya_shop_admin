@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'tb_composition' => 'Idioma',
+    'tb_properties' => 'Propriedades',
+    'tb_seo' => 'Otimização de mecanismo de pesquisa',
+    'tb_seo_title' => 'Título',
+    'tb_seo_description' => 'Descrição',
+    'tb_seo_description_notfound' => 'Nenhuma descrição foi adicionada a esta página ainda!',
+    'tb_seo_link' => 'Link da URL',
+    'tb_seo_keywords' => 'Palavras-chaves',
+    'tb_seo_keywords_notfound' => 'Nenhuma palavra-chave encontrada! Você deve adicionar palavras-chaves para analisar seu conteúdo.',
+    'tb_seo_warning' => 'Algumas de suas palavras-chaves não foram encontradas em seu conteúdo. Para corrigir isto, você deve alterar suas palavras-chaves ou adicionar algum conteúdo para as palavras-chaves definidas',
+    'tb_edit_alt' => 'Edite esta tabela na interface do CMS',
+    'tb_visible_not_alt' => 'Esta página NÃO está visível para o visitante',
+    'tb_visible_alt' => 'Esta página é visível para o seu visitante',
+    'block_html_html_label' => 'Código HTML',
+    'block_html_no_content' => 'Nenhum código HTML foi adicionado ainda.',
+    'block_module_name' => 'Módulo',
+    'block_module_modulename_label' => 'Nome do módulo',
+    'block_module_modulecontroller_label' => 'Nome do controller (sem o sufixo controller)',
+    'block_module_moduleaction_label' => 'Nome da Action (sem o prefixo action)',
+    'block_module_moduleactionargs_label' => 'Argumentos do Action (json: {"var":"value"})',
+    'block_module_no_module' => 'Nenhum módulo foi fornecido ainda.',
+    'block_module_integration' => 'Integração do módulo',
+    'block_html_name' => 'HTML',
+    'block_module_modulename_help' => 'Somente as configurações dos módulos de frontend registrados estão disponíveis.',
+    'block_group_dev_elements' => 'Desenvolvimento',
+    'block_group_layout_elements' => 'Layout',
+    'block_group_basic_elements' => 'Noções básicas',
+    'block_group_project_elements' => 'Projeto',
+    'block_group_text_elements' => 'Textos',
+    'block_group_media_group' => 'Mídia',
+
+    // 1.0.0
+    'block_module_strictrender' => 'Renderização Restrita',
+    'block_module_strictrender_help' => 'Quando a renderização restrita é ativada, o módulo só executará a rota fornecida (módulo, controlador, ação, parâmetros) sem ouvir ações e rotas do controlador.',
+    'block_html_cfg_raw_label' => 'Renderizar HTML no Admin',
+
+    // 3.4.0
+    'tag_alias_readme' => 'A tag alias (apelido) permite que você use aliases (apelidos) definidos em seu aplicativo, bem como aliases predefinidos. Como exemplo, você pode usar `alias[@web]` para vincular a imagens na pasta html pública: `<img src="alias[@web]/image.jpg">`',
+    'tag_menu_readme' => 'Gere um link para um item de menu onde a chave é o id da página (você pode ver os ids da página ao passar o mouse sobre a navegação do site na administração).',
+    'tag_page_readme' => 'Obtenha o conteúdo de uma página inteira ou de um "placeholder" de uma página. O primeiro parâmetro é o id da página (que você obtém passando o mouse sobre a navegação do site na administração): `page[1]`. Se você deseja apenas obter o conteúdo de um "placeholder" do cmslayout, use o segundo parâmetro: `page[1](placeholderName)`.',
+    'block_mirror_language_name' => 'Espelhar Idioma',
+    'block_mirror_config_language_label' => 'Idioma de Origem',
+    'block_mirror_admin_empty_language' => 'Configure um <b><span class="material-icons">edit</span> idioma de origem</b> para espelhar seu conteúdo para o atual "placeholder".',
+    'block_mirror_admin_configured_language' => 'Espelhando esse "placeholder" de <span class="material-icons">arrow_right_alt</span> <b>{name}</b>.',
+];

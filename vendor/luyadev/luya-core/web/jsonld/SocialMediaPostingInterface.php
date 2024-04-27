@@ -1,0 +1,25 @@
+<?php
+
+namespace luya\web\jsonld;
+
+/**
+ * JsonLd - Social Media Posting Interface
+ *
+ * @see https://schema.org/SocialMediaPosting
+ *
+ * @author Alex Schmid <alex.schmid@stud.unibas.ch>
+ * @since 1.0.1
+ */
+interface SocialMediaPostingInterface extends ArticleInterface
+{
+    /**
+     * @return CreativeWork
+     */
+    public function getSharedContent();
+
+    /**
+     * @param CreativeWork $sharedContent
+     * @return static
+     */
+    public function setSharedContent(CreativeWork $sharedContent);
+}

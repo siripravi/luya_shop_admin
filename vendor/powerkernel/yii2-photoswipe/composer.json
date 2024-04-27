@@ -1,0 +1,22 @@
+{
+    "name": "powerkernel/yii2-photoswipe",
+    "description": "PhotoSwipe extension for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","photoswipe"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Harry Tang",
+            "email": "harry@powerkernel.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "bower-asset/photoswipe" : "~4.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "powerkernel\\photoswipe\\": ""
+        }
+    }
+}

@@ -1,0 +1,9 @@
+/.buildpath
+/.project
+/.idea
+/.settings/
+/vendor/
+/luya
+composer.lock
+.tmp
+.php-cs-fixer.cache

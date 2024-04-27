@@ -1,0 +1,1 @@
+<?= app\modules\shopshopcart\widgets\CartWidget::widget();  ?>

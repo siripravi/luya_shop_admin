@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+<?php
+// loaders array
+$loaders = [];
+foreach ([getcwd(), __DIR__, ''] as $prefix) {
+	$loaders[] = [$prefix];
+	$loaders[] = [$prefix, '..'];
+	$loaders[] = [$prefix, '..', '..'];
+	$loaders[] = [$prefix, '..', '..', '..'];
+	$loaders[] = [$prefix, '..', '..', '..', '..'];
+}
+// find vendor if exists
+foreach ($loaders as $file) {
+	$path = implode(DIRECTORY_SEPARATOR, $file);
+	foreach ([DIRECTORY_SEPARATOR, ''] as $slash) {
+		$file = $path . $slash . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+		if (file_exists($file)) {
+			require_once($file);
+			$vendor = pathinfo($file, PATHINFO_DIRNAME);
+			break 2;
+		}
+	}	
+}
+
+$boot = new \luya\Boot();
+$boot->setBaseYiiFile($vendor . '/yiisoft/yii2/Yii.php');
+$boot->setConfigArray([
+    'id' => 'clientunglue', 
+    'basePath' => dirname(__DIR__), 
+    'enableCoreCommands' => false,
+    'defaultRoute' => 'help',
+    'controllerMap' => [
+        'help' => 'yii\console\controllers\HelpController',
+        'watch' => 'unglue\client\controllers\WatchController',
+        'compile' => 'unglue\client\controllers\CompileController',
+    ],
+]);
+$boot->applicationConsole();

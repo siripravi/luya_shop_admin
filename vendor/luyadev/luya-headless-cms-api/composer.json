@@ -1,0 +1,41 @@
+{
+	"name" : "luyadev/luya-headless-cms-api",
+	"description" : "The bridge between your SPA application and the LUYA CMS Module.",
+	"type" : "luya-module",
+	"keywords" : ["luya", "headless", "cms", "api", "bridge"],
+	"license": "MIT",
+	"authors" : [
+		{
+			"name": "Basil",
+			"email": "git@nadar.io"
+		}
+	],
+	"require": {
+		"luyadev/luya-module-cms" : ">3.0"
+	},
+	"require-dev" : {
+	    "luyadev/luya-testsuite" : "^2.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"luya\\headless\\cms\\api\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+       "psr-4" : {
+			"luya\\headless\\cms\\api\\tests\\" : "tests/"
+       }
+	},
+	
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

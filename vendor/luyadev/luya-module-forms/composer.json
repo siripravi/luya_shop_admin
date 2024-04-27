@@ -1,0 +1,46 @@
+{
+	"name" : "luyadev/luya-module-forms",
+	"description" : "A form builder module for LUYA CMS.",
+	"type" : "luya-module",
+	"keywords" : ["luya"],
+	"license": "MIT",
+	"authors" : [
+		{
+			"name": "Basil Suter",
+			"email": "git@nadar.io"
+		}
+	],
+	"require": {
+		"luyadev/luya-module-admin" : ">=3.0",
+		"luyadev/luya-module-cms" : ">=3.4",
+		"yiisoft/yii2" : "^2.0.35"
+	},
+	"require-dev" : {
+	    "luyadev/luya-testsuite" : "^3.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"luya\\forms\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+       "psr-4" : {
+           "luya\\forms\\tests\\" : "tests/"
+       }
+	},
+    "config": {
+		"fxp-asset": {
+			"enabled": false
+		},
+		"allow-plugins": {
+			"yiisoft/yii2-composer": true,
+			"luyadev/luya-composer": true
+		}
+	},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

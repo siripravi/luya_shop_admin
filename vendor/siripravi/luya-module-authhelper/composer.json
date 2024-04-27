@@ -1,0 +1,32 @@
+{
+    "name": "siripravi/authhelper",
+    "description": "Luya helper module for user authentication ",
+    "type": "yii2-extension",
+    "minimum-stability": "dev",   
+    "autoload": {
+        "psr-4": {           
+            "siripravi\\authhelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "siripravi",
+            "email": "purnachandra.valluri@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "bootstrap": "siripravi\\authhelper\\Bootstrap"
+    },
+    "config": {
+        "fxp-asset": {
+          "enabled": false
+        }
+      },
+      "repositories": [
+        {
+          "type": "composer",
+          "url": "https://asset-packagist.org"
+        }
+      ]
+}

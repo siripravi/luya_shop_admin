@@ -1,0 +1,34 @@
+{
+  "name": "siripravi/shopcart",
+  "description": "Luya module for Shopcart",
+  "type": "luya-module",
+  "keywords": [
+    "luya"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "purnachandra",
+      "email": "provdigi@gmail.com"
+    }
+  ],
+  "require": {
+   
+  },
+  "autoload": {
+    "psr-4": {
+      "siripravi\\shopcart\\": "src/"
+    }
+  },
+  "config": {
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
