@@ -2,4 +2,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cakeonc1/public_html/
- - /bin/cp -R /home/cakeonc1/luya_shop_admin/frontend/* $DEPLOYPATH
+ - rsync -azvP --delete /home/cakeonc1/luya_shop_admin/frontend/* $DEPLOYPATH
