@@ -11,8 +11,8 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [vue()],
   //site: "http://localhost:4321",
-  //output: 'hybrid',
-  site: "https://cakeoncall.in",
+ // output: 'hybrid',
+ // site: "https://cakeoncall.in",
   vite: {
     plugins: [
     
