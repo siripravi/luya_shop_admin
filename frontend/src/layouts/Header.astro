@@ -1,0 +1,36 @@
+---
+import { reactive } from 'vue'
+import Navbar from "./Navbar.astro";
+---
+<header class="main_header_area">
+  <div class="top_header_area row m0">
+    <div class="container">
+      <div class="float-left">
+        <a href="tell:+18004567890"><i class="fa fa-phone" aria-hidden="true"></i> + (1800) 456 7890</a>
+        <a href="mainto:info@cakebakery.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@cakebakery.com</a>
+      </div>
+      <div class="float-right">
+        <ul class="h_social list_style">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <ul class="h_search list_style">
+          <li class="shop_cart"><a href="#"><i class="lnr lnr-cart"></i></a></li>
+          <li><a class="popup-with-zoom-anim" href="#test-search"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main_menu_area">
+    <div class="container">    
+      <Navbar/>
+      </div>
+    </div>
+  </div>
+</header>
+  <style>
+     .float-right{float: right !important;}
+    .float-left{float: left !important;}
+  </style>

@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import valid_pokemon from "../data/valid-pokemon.json";
+import ShowSingleProduct from "../components/Products/ShowSingleProduct.vue";
+import { onMounted, ref } from "vue";
+import { getSingleProduct } from "../graphql/queries/getSingleProduct.js";
+
+export const prerender = false;
+
+const productData = await getSingleProduct("9");
+export function getStaticPaths() {
+  return [
+    { params: { path: "cake/chocolate-cake/28" } },
+    { params: { path: "cakes" } },
+    { params: { path: "pokemon/charizard" } },
+    { params: { path: "pokemon/squirtle" } },
+    { params: { path: "pokemon/ninetales" } },
+    { params: { path: undefined } },
+  ];
+}
+const { path } = Astro.params;
+---
+
+<Layout title="Product">
+  <main>
+    <h1 class="text-center text-3xl font-bold p-4">Search </h1>
+    <ShowSingleProduct product={productData} client:load />
+    <div id="app">
+      <router-view></router-view>
+    </div>
+  </main>
+</Layout>
+<script>
+  import { createApp } from "vue";
+  import App from "../App.vue";
+  import router from "../router/index.js";
+  export default {
+    name: "App",
+  };
+  createApp(App).use(router).mount("#app");
+</script>

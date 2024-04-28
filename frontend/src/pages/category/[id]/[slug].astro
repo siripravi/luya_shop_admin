@@ -1,0 +1,56 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShowProductsInCategory from "../../../components/Category/ShowProductsInCategory.vue";
+
+import { getProductsFromCategory } from "../../../graphql/queries/getProductsFromCategory";
+import { Modal, Button } from 'astro-bootstrap';
+const mid = 'modalDemo';
+//const { slug ,id} = Astro.params;
+//const { id, slug } = Astro.props;
+import { getAllCategories } from "../../../graphql/queries/getAllCategories";
+import { TabGroup } from "@headlessui/vue";
+const { id,slug } = Astro.params;
+const products = await getProductsFromCategory(slug);
+/*export function getStaticPaths() {
+  return [
+    {params: {id: "one" , slug: 'hello'}},
+    {params: {id: "two" , slug: 'rover'}},
+    {params: {id: "three" , slug: 'spot'}},
+  ];
+}*/
+
+
+export async function getStaticPaths() {
+  const groups = await getAllCategories();
+  const cobj = {
+    paths: groups.extras.elements.categories.map(({id,slug}) => ({
+      params: { id,slug }
+    //  props: { id, text },
+    }))   
+  };
+  console.log(cobj.paths);
+  return cobj.paths;
+}
+
+---
+
+<Layout title="Welcome to Category Products">
+  <main>
+    <h1 class="text-3xl text-center font-bold p-6">All- {slug}</h1>
+     <ShowProductsInCategory products={products.extras.moduleContent} client:load />
+     <!-- Button to trigger -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${id}`}>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<Modal id={id} fade>
+  <Modal.Header parent={id}>Modal title</Modal.Header>
+  <Modal.Body>Woo-hoo, you're reading this text in a modal!</Modal.Body>
+  <Modal.Footer>
+    <Button variant="primary" modalClose>Close</Button>
+    <Button variant="secondary" >Save Changes</Button>
+  </Modal.Footer>
+</Modal>
+  </main>
+</Layout>

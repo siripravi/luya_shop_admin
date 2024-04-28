@@ -1,0 +1,65 @@
+$screen-xs-min: 18.75rem;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 36rem;
+
+// Small tablets (portrait view)
+$screen-md-min: 48rem;
+
+// Tablets and small desktops
+$screen-lg-min: 64.0625rem;
+
+// Large tablets and desktops
+$screen-xl-min: 75rem;
+
+// Extra large tablets and desktops
+$screen-xxl-min: 87.5rem;
+
+// Extra small devices
+@mixin xs {
+	@media (min-width: #{$screen-xs-min}) {
+		@content;
+	}
+}
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// Extra extra large devices
+@mixin xxl {
+	@media (min-width: #{$screen-xxl-min}) {
+		@content;
+	}
+}
+
+// To use these mixins, you can do something like this:
+// @include lg {
+// 	.container {
+// 		max-width: 100%;
+// 	}
+// }

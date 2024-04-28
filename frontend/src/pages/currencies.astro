@@ -1,0 +1,16 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import {getAllCurrencies} from "../graphql/queries/getAllCurrencies";
+//import { setAuthToken, clearAuthToken, get, post } from "../lib/luyapi";
+
+const currencyData = await getAllCurrencies();
+export const prerender = false;
+
+---
+<Layout title="Welcome to Single Products">
+  <div class="container">
+    <h1 class="text-3xl text-center font-bold p-6">Currencies</h1>
+    <div>{currencyData}</div>
+  </div>
+</Layout>
