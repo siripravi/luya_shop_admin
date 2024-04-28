@@ -1,0 +1,1 @@
+import{c as p}from"./runtime-dom.esm-bundler.Bdd8PQI7.js";import{r,A as o}from"./index.B3D-wnzj.js";import"./hoisted.BjsMXfvU.js";import"./runtime-core.esm-bundler.BzkSQhur.js";import"./_plugin-vue_export-helper.DlAUqK2U.js";import"./axios.Cm0UX6qg.js";p(o).use(r).mount("#app");
