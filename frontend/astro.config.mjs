@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [vue()],
   //site: "http://localhost:4321",
   //output: 'hybrid',
-  site: "http://localhost:4321",
+  site: "https://cakeoncall.in",
   vite: {
     plugins: [
     
