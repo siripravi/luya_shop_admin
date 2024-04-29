@@ -23,7 +23,7 @@ class Module extends \luya\admin\base\Module
         'api-catalog-brand'         => 'siripravi\ecommerce\admin\apis\BrandController',
         'api-catalog-currency'      => 'siripravi\ecommerce\admin\apis\CurrencyController',
         'api-catalog-unit'          => 'siripravi\ecommerce\admin\apis\UnitController',
-        'api-catalog-producer'      => 'siripravi\ecommerce\admin\apis\ProducerController',
+     //   'api-catalog-producer'      => 'siripravi\ecommerce\admin\apis\ProducerController',
         'api-catalog-productrelated' => 'siripravi\ecommerce\admin\apis\ProductRelatedController',
         'api-catalog-related'       => 'siripravi\ecommerce\admin\apis\RelatedController',
         'api-catalog-articleprice'     => 'siripravi\ecommerce\admin\apis\ArticlePriceController',
