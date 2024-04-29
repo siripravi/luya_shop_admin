@@ -9,7 +9,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         //this->context->layout = false;
-        return $this->render('index');
+        return $this->renderFile('index.html');
     }
     public function actionContact()
     {
