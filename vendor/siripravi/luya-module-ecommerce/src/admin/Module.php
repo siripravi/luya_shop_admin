@@ -36,26 +36,26 @@ class Module extends \luya\admin\base\Module
         return (new \luya\admin\components\AdminMenuBuilder($this))
             ->node('Shop Catalog', 'local_mall')
             ->group('Products')
-            ->itemApi('Groups', 'catalogadmin/group/index', 'folder', 'api-catalog-group')
-            ->itemApi('Group Features', 'catalogadmin/feature-group-ref/index', 'library_books', 'api-catalog-featuregroupref')
-            ->itemApi('Products', 'catalogadmin/product/index', 'library_books', 'api-catalog-product')
-            ->itemApi('Articles', 'catalogadmin/article/index', 'list', 'api-catalog-article')
-            ->itemApi('Related', 'catalogadmin/related/index', 'domain', 'api-catalog-related')
-            ->itemApi('Prices', 'catalogadmin/article-price/index', 'adjust', 'api-catalog-articleprice')
+            ->itemApi('Groups', 'ecommerceadmin/group/index', 'folder', 'api-catalog-group')
+            ->itemApi('Group Features', 'ecommerceadmin/feature-group-ref/index', 'library_books', 'api-catalog-featuregroupref')
+            ->itemApi('Products', 'ecommerceadmin/product/index', 'library_books', 'api-catalog-product')
+            ->itemApi('Articles', 'ecommerceadmin/article/index', 'list', 'api-catalog-article')
+            ->itemApi('Related', 'ecommerceadmin/related/index', 'domain', 'api-catalog-related')
+            ->itemApi('Prices', 'ecommerceadmin/article-price/index', 'adjust', 'api-catalog-articleprice')
             ->group('Settings')
-            ->itemApi('Units', 'catalogadmin/unit/index', 'domain', 'api-catalog-unit')
-            ->itemApi('Currencies', 'catalogadmin/currency/index', 'attach_money', 'api-catalog-currency')
-            ->itemApi('Brands', 'catalogadmin/brand/index', 'auto_awesome_motion', 'api-catalog-brand')
+            ->itemApi('Units', 'ecommerceadmin/unit/index', 'domain', 'api-catalog-unit')
+            ->itemApi('Currencies', 'ecommerceadmin/currency/index', 'attach_money', 'api-catalog-currency')
+            ->itemApi('Brands', 'ecommerceadmin/brand/index', 'auto_awesome_motion', 'api-catalog-brand')
             ->group('Sets')
-            // ->itemApi('Sets', 'catalogadmin/article-value-ref/index', 'web_asset', 'api-articlevalueref')
-            ->itemApi('Features', 'catalogadmin/feature/index', 'check_box', 'api-catalog-feature')
-            ->itemApi('Values', 'catalogadmin/value/index', 'check_box', 'api-catalog-value');
+            // ->itemApi('Sets', 'ecommerceadmin/article-value-ref/index', 'web_asset', 'api-articlevalueref')
+            ->itemApi('Features', 'ecommerceadmin/feature/index', 'check_box', 'api-catalog-feature')
+            ->itemApi('Values', 'ecommerceadmin/value/index', 'check_box', 'api-catalog-value');
     }
 
     public function getAdminAssets()
     {
         return [
-            'siripravi\ecommerce\admin\assets\CatalogAdminAsset'
+            'siripravi\ecommerce\admin\assets\ecommerceadminAsset'
         ];
     }
 }

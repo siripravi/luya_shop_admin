@@ -4,6 +4,6 @@ require(__DIR__ . '/../vendor/autoload.php');
 
 // use the luya boot wrapping class
 $boot = new \luya\Boot();
-$boot->configFile = "../configs/env.php";
+$boot->configFile = "../../cocfg/env.php";
 $boot->setBaseYiiFile(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 $boot->run();
