@@ -3,4 +3,4 @@ deployment:
  tasks:
  - export DEPLOYPATH=/home/cakeonc1/public_html/
  - /bin/cp -R /home/cakeonc1/luya_shop_admin/frontend/dist/* $DEPLOYPATH
- - /bin/cp -R /home/cakeonc1/luya_shop_admin/frontend/index_prod.php $DEPLOYPATH/index.php
+ - /bin/cp -R /home/cakeonc1/luya_shop_admin/index_prod.php $DEPLOYPATH/index.php
