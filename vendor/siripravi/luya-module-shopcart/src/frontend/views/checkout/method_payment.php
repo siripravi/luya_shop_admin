@@ -1,1 +1,0 @@
-<h3>Hello Method Payment</h3>

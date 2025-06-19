@@ -1,5 +1,0 @@
-{
-    "js" : [
-        "intersectionObserver.polyfill.src.js"
-    ]
-}

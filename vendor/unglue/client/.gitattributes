@@ -1,3 +1,0 @@
-# Exclude non-essential files from dist
-data/ export-ignore
-tests/ export-ginore
